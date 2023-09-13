@@ -6,12 +6,20 @@
     --background-primary-color: #FFFFFF;
     --background-secondary-color: #2F303A;
     --accent-color: #2196F3;
+    --transperent-color: #FFFFFF99;
+    --inactive-filter-color: #F5F4FA;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: var(--primary-color);
+}
+
+/* HEADER */
+
+.header {
+    background-color: var(--background-primary-color);
 }
 
 .text-logo {
@@ -50,4 +58,132 @@ body {
 .navigation-button:hover,
 .navigation-button-active {
     color: var(--accent-color);
+}
+
+/* MAIN */
+
+.hero {
+    background-color: var(--background-secondary-color);
+}
+
+.hero-header {
+    color: var(--background-primary-color);
+    font-weight: 900;
+    font-size: 44px;
+}
+
+.hero-button {
+    background-color: var(--accent-color);
+    color: var(--background-primary-color);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.feature-label {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.feature-description {
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.team-header,
+.development-stack-header {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.team-list,
+.feature-list,
+.development-stack-list {
+    list-style-type: none;
+}
+
+.employee {
+    background-color: var(--background-primary-color);
+}
+
+.employee-name {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.employee-job {
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--background-secondary-color);
+}
+
+.footer-logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.accent-text-footer-logo {
+    color: var(--accent-color);
+}
+
+.studio-address,
+.text-footer-logo {
+    color: var(--background-primary-color);
+}
+
+.studio-address {
+    font-size: 14px;
+}
+
+.contact-info-footer {
+    all: initial;
+    font-family: inherit;
+}
+
+.tel-footer,
+.email-footer {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--transperent-color);
+}
+
+/* PORTFOLIO-MAIN */
+
+.filter-list,
+.project-list {
+    list-style-type: none;
+}
+
+.filter,
+.active-filter {
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--inactive-filter-color);
+    color: var(--primary-color);
+}
+
+.active-filter {
+    color: var(--background-primary-color);
+    background-color: var(--accent-color);
+}
+
+.project {
+    background-color: var(--background-primary-color);
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.project-description {
+    font-size: 16px;
 }
