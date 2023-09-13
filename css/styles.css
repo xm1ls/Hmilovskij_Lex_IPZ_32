@@ -73,6 +73,7 @@ body {
 }
 
 .hero-button {
+    cursor: pointer;
     background-color: var(--accent-color);
     color: var(--background-primary-color);
     font-weight: 700;
