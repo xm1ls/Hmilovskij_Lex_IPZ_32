@@ -1,0 +1,218 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap'); */
+
+:root {
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --background-primary-color: #FFFFFF;
+    --background-secondary-color: #2F303A;
+    --accent-color: #2196F3;
+    --transperent-color: #FFFFFF99;
+    --inactive-filter-color: #F5F4FA;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+/* HEADER */
+
+.header {
+    background-color: var(--background-primary-color);
+}
+
+.contact-info {
+    color: var(--secondary-color);
+}
+
+.contact-info,
+.navigation-button-list {
+    list-style-type: none;
+}
+
+.logo {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.78px;
+}
+
+.tel,
+.email,
+.navigation-button,
+.navigation-button-active {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.28px;
+    /* font-size: 14px; */
+    color: inherit;
+}
+
+.tel:hover,
+.email:hover,
+.accent-text-logo,
+.navigation-button:hover,
+.navigation-button-active {
+    color: var(--accent-color);
+}
+
+/* MAIN */
+
+.hero {
+    background-color: var(--background-secondary-color);
+}
+
+.hero-header {
+    color: var(--background-primary-color);
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+}
+
+.hero-button {
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--background-primary-color);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.feature-label {
+    line-height: 1.17;
+    letter-spacing: 0.42px;
+    font-size: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+.feature-description {
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    /* font-size: 14px; */
+    color: var(--secondary-color);
+}
+
+.team-header,
+.development-stack-header {
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.team-list,
+.feature-list,
+.development-stack-list {
+    list-style-type: none;
+}
+
+.employee {
+    background-color: var(--background-primary-color);
+}
+
+.employee-name {
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.employee-job {
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--background-secondary-color);
+}
+
+.footer-logo {
+    color: var(--background-primary-color);
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.accent-text-footer-logo {
+    color: var(--accent-color);
+}
+
+.studio-address {
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    font-size: 14px;
+    color: var(--background-primary-color);
+}
+
+.contact-info-footer {
+    all: initial;
+    font-family: inherit;
+}
+
+.tel-footer,
+.email-footer {
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--transperent-color);
+}
+
+/* PORTFOLIO-MAIN */
+
+.filter-list,
+.project-list {
+    list-style-type: none;
+}
+
+.filter,
+.active-filter {
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--inactive-filter-color);
+    color: var(--primary-color);
+}
+
+.active-filter {
+    color: var(--background-primary-color);
+    background-color: var(--accent-color);
+}
+
+.project {
+    background-color: var(--background-primary-color);
+    text-decoration: none;
+}
+
+.project-title {
+    line-height: 2;
+    letter-spacing: 1.08px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.project-description {
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+    font-size: 16px;
+    color: var(--secondary-color);
+}
