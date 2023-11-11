@@ -33,6 +33,10 @@ h1, h2, h3, p, ul, li {
     margin: 0;
 }
 
+img {
+    display: block;
+}
+
 /* HEADER */
 
 .header {
@@ -125,7 +129,7 @@ h1, h2, h3, p, ul, li {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
-    width: 696px;
+    max-width: 696px;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -164,7 +168,6 @@ h1, h2, h3, p, ul, li {
 
 .feature {
     width: 270px;
-    height: 98px;
     flex-shrink: 0;
 }
 
@@ -174,7 +177,7 @@ h1, h2, h3, p, ul, li {
     font-size: inherit;
     text-transform: uppercase;
     font-weight: 700;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .feature-description {
@@ -232,20 +235,22 @@ h1, h2, h3, p, ul, li {
 .employee-name,
 .employee-job {
     color: var(--primary-color);
-    padding-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .employee-name-job {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .employee-job {
+    margin-top: 10px;
+    font-weight: 400;
     color: var(--secondary-color);
 }
 
@@ -334,8 +339,9 @@ h1, h2, h3, p, ul, li {
 }
 
 .project-list {
+    list-style-type: none;
     display: grid;
-    grid-template-columns: 370px 370px 370px;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 30px;
 }
@@ -344,6 +350,7 @@ h1, h2, h3, p, ul, li {
     display: flex;
     flex-direction: column;
     border: 1px solid #EEE;
+    width: max-content;
 }
 
 .project {
@@ -351,13 +358,8 @@ h1, h2, h3, p, ul, li {
     text-decoration: none;
 }
 
-.project img {
-    margin-bottom: 30px;
-    display: block;
-}
-
 .project-details {
-    padding: 0px 24px 20px 24px;
+    padding: 24px 24px 20px 24px;
 }
 
 .project-title {
