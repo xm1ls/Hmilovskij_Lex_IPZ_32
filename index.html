@@ -4,130 +4,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Студія</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
-
+  <link rel="stylesheet" href="css/modern-normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+
+  <title>Студія</title>
 </head>
 
-<body class="body">
+<body>
   <header class="header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <span class="accent-text-logo">Web</span>Studio
+      </a>
 
-    <a class="logo" href="index.html">
-      <span class="accent-text-logo">Web</span>Studio
-    </a>
+      <nav>
+        <ul class="navigation-button-list">
+          <li><a class="navigation-button navigation-button-active" href="index.html">Студія</a></li>
+          <li><a class="navigation-button" href="portfolio.html">Портфоліо</a></li>
+          <li><a class="navigation-button" href="/Contacts">Контакти</a></li>
+        </ul>
+      </nav>
 
-    <nav>
-      <ul class="navigation-button-list">
-        <li><a class="navigation-button-active" href="index.html">Студія</a></li>
-        <li><a class="navigation-button" href="portfolio.html">Портфоліо</a></li>
-        <li><a class="navigation-button" href="/Contacts">Контакти</a></li>
+      <ul class="contact-info">
+        <li><a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
-    </nav>
-
-    <ul class="contact-info">
-      <li><a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-    </ul>
-
+    </div>
   </header>
 
   <main class="main">
     <section class="hero">
-      <h1 class="hero-header">Ефективні рішення для вашого бізнесу</h1>
-      <button class="hero-button" type="button">Замовити послугу</button>
+      <div class="hero-container container">
+        <h1 class="hero-header">Ефективні рішення для вашого бізнесу</h1>
+        <button class="hero-button" type="button">Замовити послугу</button>
+      </div>
     </section>
 
     <section class="main-content">
+      <div class="container">
+        <h2 hidden>Our advantages</h2>
 
-      <h2 hidden>Our advantages</h2>
-
-      <ul class="feature-list">
-        <li class="feature">
-          <h3 class="feature-label">увага до деталей</h3>
-          <p class="feature-description">
-            Ідейні міркування, і навіть початок повсякденної роботи з
-            формування позиції.
-          </p>
-        </li>
-        <li class="feature">
-          <h3 class="feature-label">пунктуальність</h3>
-          <p class="feature-description">
-            Завдання організації, особливо рамки і місце навчання кадрів тягне
-            у себе.
-          </p>
-        </li>
-        <li class="feature">
-          <h3 class="feature-label">планування</h3>
-          <p class="feature-description">
-            Так само консультація з широким активом значною мірою зумовлює.
-          </p>
-        </li>
-        <li class="feature">
-          <h3 class="feature-label">сучасні технології</h3>
-          <p class="feature-description">
-            Значимість цих проблем настільки очевидна, що реалізація планових
-            завдань.
-          </p>
-        </li>
-      </ul>
+        <ul class="feature-list">
+          <li class="feature">
+            <h3 class="feature-label">увага до деталей</h3>
+            <p class="feature-description">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li class="feature">
+            <h3 class="feature-label">пунктуальність</h3>
+            <p class="feature-description">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
+          </li>
+          <li class="feature">
+            <h3 class="feature-label">планування</h3>
+            <p class="feature-description">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="feature">
+            <h3 class="feature-label">сучасні технології</h3>
+            <p class="feature-description">
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2 class="development-stack-header">Чим ми займаємося</h2>
-      <ul class="development-stack-list">
-        <li class="dev">
-          <img src="images/img-4.jpg" alt="Ми програмуємо" width="370" />
-        </li>
-        <li>
-          <img src="images/img-5.jpg" alt="Ми аналізуємо" width="370" />
-        </li>
-        <li>
-          <img src="images/img-6.jpg" alt="Ми створюємо" width="370" />
-        </li>
-      </ul>
+    <section class="development">
+      <div class="container">
+        <h2 class="development-stack-header">Чим ми займаємося</h2>
+        <ul class="development-stack-list">
+          <li class="dev">
+            <img src="images/img-4.jpg" alt="Ми програмуємо" width="370" />
+          </li>
+          <li>
+            <img src="images/img-5.jpg" alt="Ми аналізуємо" width="370" />
+          </li>
+          <li>
+            <img src="images/img-6.jpg" alt="Ми створюємо" width="370" />
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2 class="team-header">Наша команда</h2>
-      <ul class="team-list">
-        <li class="employee">
-          <img src="images/img.jpg" alt="Ігор Дем'яненко" width="270" />
-          <h3 class="employee-name">Ігор Дем'яненко</h3>
-          <p class="employee-job">Product Designer</p>
-        </li>
-        <li class="employee">
-          <img src="images/img-1.jpg" alt="Ольга Рєпіна" width="270" />
-          <h3 class="employee-name">Ольга Рєпіна</h3>
-          <p class="employee-job">Frontend Developer</p>
-        </li>
-        <li class="employee">
-          <img src="images/img-2.jpg" alt="Микола Тарасов" width="270" />
-          <h3 class="employee-name">Микола Тарасов</h3>
-          <p class="employee-job">Marketing</p>
-        </li>
-        <li class="employee">
-          <img src="images/img-3.jpg" alt="Михайло Єрмаков" width="270" />
-          <h3 class="employee-name">Михайло Єрмаков</h3>
-          <p class="employee-job">UI Designer</p>
-        </li>
-      </ul>
+    <section class="team-section">
+      <div class="container">
+        <h2 class="team-header">Наша команда</h2>
+        <ul class="team-list">
+          <li class="employee">
+            <img src="images/img.jpg" alt="Ігор Дем'яненко" width="270" />
+            <div class="employee-name-job">
+              <h3 class="employee-name">Ігор Дем'яненко</h3>
+              <p class="employee-job">Product Designer</p>
+            </div>
+          </li>
+          <li class="employee">
+            <img src="images/img-1.jpg" alt="Ольга Рєпіна" width="270" />
+            <div class="employee-name-job">
+              <h3 class="employee-name">Ольга Рєпіна</h3>
+              <p class="employee-job">Frontend Developer</p>
+            </div>
+          </li>
+          <li class="employee">
+            <img src="images/img-2.jpg" alt="Микола Тарасов" width="270" />
+            <div class="employee-name-job">
+              <h3 class="employee-name">Микола Тарасов</h3>
+              <p class="employee-job">Marketing</p>
+            </div>
+          </li>
+          <li class="employee">
+            <img src="images/img-3.jpg" alt="Михайло Єрмаков" width="270" />
+            <div class="employee-name-job">
+              <h3 class="employee-name">Михайло Єрмаков</h3>
+              <p class="employee-job">UI Designer</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <a class="footer-logo" href="index.html">
-      <span class="accent-text-footer-logo">Web</span>Studio
-    </a>
+    <div class="container">
+      <a class="footer-logo" href="index.html">
+        <span class="accent-text-footer-logo">Web</span>Studio
+      </a>
 
-    <address class="contact-info-footer">
-      <p class="studio-address">м. Київ, пр-т Лесі Українки, 26</p>
-      <a class="email-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="tel-footer" href="tel:+380961111111">+38 096 111 11 11</a>
-    </address>
+      <address class="contact-info-footer">
+        <p class="studio-address">м. Київ, пр-т Лесі Українки, 26</p>
+        <a class="email-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="tel-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+      </address>
+    </div>
   </footer>
 </body>
 
