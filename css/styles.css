@@ -26,9 +26,14 @@ button:focus {
     outline: none;
     border: 1px solid var(--accent-color);
 }
-  
 
-h1, h2, h3, p, ul, li {
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     padding: 0;
     margin: 0;
 }
@@ -79,6 +84,12 @@ img {
     list-style-type: none;
 }
 
+.contact-info li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo {
     color: var(--primary-color);
     text-decoration: none;
@@ -96,9 +107,7 @@ img {
 .navigation-button-active {
     text-decoration: none;
     font-weight: 500;
-    /* line-height: 1.17; */
     letter-spacing: 0.28px;
-    /* font-size: 14px; */
     color: inherit;
     transition: color 300ms;
 }
@@ -117,6 +126,9 @@ img {
 /* MAIN */
 
 .hero {
+    background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(47, 48, 58, 0.40)), url("../images/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
     background-color: var(--background-secondary-color);
     padding-top: 200px;
     padding-bottom: 200px;
@@ -169,6 +181,17 @@ img {
 .feature {
     width: 270px;
     flex-shrink: 0;
+}
+
+.feature-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: var(--inactive-filter-color);
 }
 
 .feature-label {
@@ -227,9 +250,9 @@ img {
 .employee {
     background-color: var(--background-primary-color);
     border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .employee-name,
@@ -252,6 +275,84 @@ img {
     margin-top: 10px;
     font-weight: 400;
     color: var(--secondary-color);
+}
+
+.employee-social {
+    list-style: none;
+    margin-top: 16px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.employee-social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #ffffff00;
+    color: #AFB1B8;
+    transition: 333ms;
+}
+
+.employee-social a:hover,
+.employee-social a:focus {
+    background-color: var(--accent-color);
+    color: var(--background-primary-color);
+}
+
+.regular-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.regular-customers>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.regular-customers-title {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.customer-link {
+    transition: 300ms;
+    display: inline-block;
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+    color: #AFB1B8;
+}
+
+.customer-logo {
+    width: 106px;
+    height: 60px;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+    transition: 300ms;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* FOOTER */
@@ -297,6 +398,49 @@ img {
     text-decoration: none;
     font-size: 14px;
     color: var(--transperent-color);
+}
+
+.footer>div {
+    display: flex;
+    align-items: baseline;
+}
+
+.join-us {
+    margin-left: 94px;
+}
+
+.footer-social {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);
+    color: white;
+    transition: 333ms;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+    background-color: var(--accent-color);
+    color: var(--background-primary-color);
+}
+
+.join-us h3 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 /* PORTFOLIO-MAIN */
@@ -351,6 +495,11 @@ img {
     flex-direction: column;
     border: 1px solid #EEE;
     width: max-content;
+}
+
+.project-list li:hover {
+    transition: 300ms;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .project {
